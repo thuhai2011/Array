@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let xyz = [1,2,3,4,12,15,30];
+        //in ra cac phan tu trong mang
+        for(let i = 0 ; i < xyz.length; i++ ){
+            document.write(xyz[i] + " ");
+        }
+        // in ra cac phan tu chan trong mang
+        for(let i = 0 ; i < xyz.length; i++ ){
+            if(xyz[i] %2 == 0){
+                document.write(xyz[i] + " ");
+            }         
+        }
+
+        //in ra cac phan tu trong mang ,chan thi in the <p> ,le thi trong the h3
+            for(let i = 0 ; i < xyz.length; i++ ){
+                if(xyz[i] %2 == 0){
+                    document.write('<p>' + xyz[i] + '</p>')
+            } else{
+                document.write('<h3>' + xyz[i] + '</h3>')
+            }
+        }
+
+        //in ra cac phan tu tai vi tri chan
+        for(let i= 0; i< xyz.length; i++){
+            if(i%2 == 0){
+                document.write(xyz[i] + " ");
+            }
+        }
+
+        //in ra tong cac phan tu >20
+        let sum = 0;
+        for(let i = 0;i< xyz.length ; i++ ){
+            if(xyz[i]>20){
+                sum += xyz[i];
+            }
+        } 
+            document.write("tong la:" + sum + "<br>");
+
+        //in ra trung binh cong cac phan tu chia het cho 3 trong mang
+        let sum1 = 0;
+        let count = 0;
+        for (let i = 0; i< xyz.length; i++ ){
+            if (xyz[i] % 3== 0){
+                sum1 += xyz[i];
+                count++;
+            }
+        }
+        document.write('trung binh cong so chi het cho 3 la:' +sum1/count);
+    </script>
+</body>
+</html>

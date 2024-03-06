@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //tim so lon thu nhat trong mang
+        let arr = [1,3,4,2,25,34,26];
+        let a = arr[0];
+        for(let i =0 ; i < arr.length; i++){
+            if (a < arr[i]){
+                a = arr[i];
+            }
+        }
+        document.write(a);
+        document.write("<br>");
+        
+        //tim so lon thu 2 trong mang
+        let max=0;
+        let secondMax=0;
+        let arr1=[1,2,3,4,5,6,7,8,9,10,11,12,30,40,50,60,70];
+        for(let i=0; i<arr1.length;i++){
+           if(arr1[i]>max){
+            secondMax=max;
+            max=arr1[i];
+           } else if(arr1[i]>secondMax && arr1[i]!=max){
+            secondMax=arr1[i];
+           }
+        }
+        document.write(secondMax);
+
+    </script>
+</body>
+</html>
