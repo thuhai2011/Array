@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //nhap va in ra cac phan tu
+        let n = +prompt("nhap vao so luong phan tu");
+        let arr = [];
+        for(let i= 0; i< n;i++){
+            let x = +prompt('nhap vao cac phan tu thu' + i);
+            arr.push(x);
+        }
+
+        for(let i = 0; i< arr.length; i++){
+            document.write(arr[i] + "<br>")
+        }
+
+        //nhap cac phan tu cua mang cho den khi nhap -1 thi dung
+        //in moi phan tu 1 dong
+        let arr1 = [];
+        let y ;
+        for(let i= 0; i != -1 ;i++){
+            y = +prompt('nhap vao cac phan tu thu' + i);
+            arr1.push(y);
+        }
+
+        //cach2 
+        // for(let i= 0;  ;i++){
+        //     y = +prompt('nhap vao cac phan tu thu' + i);
+        //     if (i == -1){
+        //         break;
+        //     }
+        //     arr1.push(y);
+        // }
+
+        for(let i = 0; i< arr1.length; i++){
+            document.write(arr[i] + "<br>")
+        }
+    </script>
+</body>
+</html>

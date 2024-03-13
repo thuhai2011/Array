@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //tinh duong cheo phu :5(0,3); 5(1,2),7(2,3), 8(3,1)
+        let arr = [
+            [1,2,3,5],
+            [7,6,5,3],
+            [2,9,7,8],
+            [13,23,15,34] 
+        ]
+        let tong = 0;
+        for (let i = 0; i < arr.length; i++){
+            for(let j = 0; j <arr[i].length; j++){
+                if (i + j == arr.length - 1){
+                    tong += arr[i][j];
+                }
+            }
+        }
+        document.write(tong);
+
+        //cach 2
+        let tong1 = 0;
+        for (let i = 0; i < arr.length; i++){
+            tong1 += arr[i][arr.length -1 -i];
+        }
+        document.write(tong1);
+
+    </script>
+</body>
+</html>
