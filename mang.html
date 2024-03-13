@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [23, 35 ,2,4, 45,32];
+
+        //tim max thu nhat
+        let max =arr[0];
+        for (let i =0 ; i< arr.length; i++){
+            if (arr[i]> max ){
+                max = arr[i];
+            }
+        }
+        document.write("max la:" + max );
+
+        //tim max thu hai
+        //neu nhu hai so lon hon trung nhau thi lay secondMax = -999 (am vo cuc la duoc)
+        let secondMax = 0;
+        let max1 = 0;
+        for(let i = 0 ; i< arr.length ; i++){
+            if (arr[i] > secondMax && arr[i] < max){
+                secondMax =arr[i];
+            }
+        } 
+        document.write("max 2 la: "+ secondMax);
+    </script>
+</body>
+</html>

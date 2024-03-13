@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [
+            [1,2,3,5,6],
+            [7,6,5,3],
+            [2,9,7,8],
+            [13,23,15,34] 
+        ]
+
+        for (let i = 0; i < arr.length ; i++){
+            for(let j = 0 ; j< arr[i].length ; j++){
+                document.write( arr[i][j] + ' ' )
+            }
+            document.write('<br>');
+        }
+        //in ra cac phan tu > 10
+        
+        for (let i = 0; i < arr.length ; i++){
+            for(let j = 0 ; j< arr[i].length ; j++){
+                if (arr[i][j] > 10){
+                    document.write( arr[i][j] +' ' )
+                }
+            }
+            document.write('<br>');
+        }
+
+        //tinh tong cac phan tu chan
+        let sum = 0;
+        for (let i = 0; i < arr.length ; i++){
+            for(let j = 0 ; j< arr[i].length ; j++){
+                if (arr[i][j] %2 ==0 ){
+                    sum += arr[i][j];
+                    document.write( arr[i][j] +' ' );
+                }
+            }
+        }
+        document.write( 'tong so chan la: ' + sum)
+
+    </script>
+</body>
+</html>

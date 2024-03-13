@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [2,3,4,6,3,23];
+        // Đếm số lần xuất hiện của từng phần tử trong mảng.
+
+        //nhập vào x , in ra vị trí trong mang
+        let x = +prompt('nhao vao x :');
+        for(let i = 0; i < arr.length ;i++){
+            if(arr[i] == x){
+                document.write('x co vi tri la: ' +  i)
+            }               
+        }
+
+        //tim max va vi tri cua max
+         let max = arr[0];
+         for(let j = 0; j < arr.length ; j++){
+            if ( max <arr[j]){
+                max = arr[j];
+            }
+         }
+        document.write('max la:' + max + 'vi ti la: ' + j)
+    </script>
+</body>
+</html>
